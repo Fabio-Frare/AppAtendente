@@ -1,8 +1,10 @@
-package br.udesc.comandaappatendente;
+package br.udesc.comandaappatendente.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import br.udesc.comandaappatendente.R;
 
 public class PedidoEntrada extends AppCompatActivity {
 
