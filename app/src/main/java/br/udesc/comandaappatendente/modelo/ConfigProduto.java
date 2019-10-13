@@ -1,57 +1,34 @@
 package br.udesc.comandaappatendente.modelo;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class ConfigProduto {
 
-    private long idConfigProduto;
+    private String idConfigProduto;
+    private String nome;
+    private float acrescimo;
 
-    private String campoConfig;
 
-    private Produto produto;
-
-    private String idProduto;//@ForeignKey
-
-    private List<ConfigValue> values = new ArrayList<>();
-
-    public long getIdConfigProduto() {
+    public String getIdConfigProduto() {
         return idConfigProduto;
     }
 
-    public void setIdConfigProduto(long idConfigProduto) {
+    public void setIdConfigProduto(String idConfigProduto) {
         this.idConfigProduto = idConfigProduto;
     }
 
-    public String getCampoConfig() {
-        return campoConfig;
+    public String getNome() {
+        return nome;
     }
 
-    public void setCampoConfig(String campoConfig) {
-        this.campoConfig = campoConfig;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
-    public Produto getProduto() {
-        return produto;
+    public float getAcrescimo() {
+        return acrescimo;
     }
 
-    public void setProduto(Produto produto) {
-        this.produto = produto;
-    }
-
-    public String getIdProduto() {
-        return idProduto;
-    }
-
-    public void setIdProduto(String idProduto) {
-        this.idProduto = idProduto;
-    }
-
-    public List<ConfigValue> getValues() {
-        return values;
-    }
-
-    public void setValues(List<ConfigValue> values) {
-        this.values = values;
+    public void setAcrescimo(float acrescimo) {
+        this.acrescimo = acrescimo;
     }
 }

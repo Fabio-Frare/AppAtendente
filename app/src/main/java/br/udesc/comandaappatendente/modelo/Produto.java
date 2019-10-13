@@ -1,28 +1,21 @@
 package br.udesc.comandaappatendente.modelo;
 
+
 import java.util.List;
+
+import br.udesc.comandaappatendente.util.ProdutoStatus;
 
 public class Produto {
 
     private String idProduto;
-
     private String nome;
-
     private String ingredientes;
-
-    private String descricao;
-
     private float precoBase;
-
-    private boolean disponivel;
-
+    private boolean disponibilidade;
+    private ProdutoStatus status;
     private Categoria categoria;
+    private List<ConfigProduto> configProduto;
 
-    private long idCategoria;
-
-    private float avaliacao;
-
-    private List<ConfigProduto> campos;
 
     public String getIdProduto() {
         return idProduto;
@@ -48,14 +41,6 @@ public class Produto {
         this.ingredientes = ingredientes;
     }
 
-    public String getDescricao() {
-        return descricao;
-    }
-
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
-
     public float getPrecoBase() {
         return precoBase;
     }
@@ -64,12 +49,20 @@ public class Produto {
         this.precoBase = precoBase;
     }
 
-    public boolean isDisponivel() {
-        return disponivel;
+    public boolean isDisponibilidade() {
+        return disponibilidade;
     }
 
-    public void setDisponivel(boolean disponivel) {
-        this.disponivel = disponivel;
+    public void setDisponibilidade(boolean disponibilidade) {
+        this.disponibilidade = disponibilidade;
+    }
+
+    public ProdutoStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ProdutoStatus status) {
+        this.status = status;
     }
 
     public Categoria getCategoria() {
@@ -80,27 +73,12 @@ public class Produto {
         this.categoria = categoria;
     }
 
-    public long getIdCategoria() {
-        return idCategoria;
+    public List<ConfigProduto> getConfigProduto() {
+        return configProduto;
     }
 
-    public void setIdCategoria(long idCategoria) {
-        this.idCategoria = idCategoria;
+    public void setConfigProduto(List<ConfigProduto> configProduto) {
+        this.configProduto = configProduto;
     }
 
-    public float getAvaliacao() {
-        return avaliacao;
-    }
-
-    public void setAvaliacao(float avaliacao) {
-        this.avaliacao = avaliacao;
-    }
-
-    public List<ConfigProduto> getCampos() {
-        return campos;
-    }
-
-    public void setCampos(List<ConfigProduto> campos) {
-        this.campos = campos;
-    }
 }

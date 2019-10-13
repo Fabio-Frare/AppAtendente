@@ -2,17 +2,16 @@ package br.udesc.comandaappatendente.modelo;
 
 public class Categoria {
 
-    private long idcategoria;
-
+    private String idCategoria;
     private String nome;
 
 
-    public long getIdcategoria() {
-        return idcategoria;
+    public String getIdCategoria() {
+        return idCategoria;
     }
 
-    public void setIdcategoria(long idcategoria) {
-        this.idcategoria = idcategoria;
+    public void setIdCategoria(String idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
     public String getNome() {
@@ -22,4 +21,5 @@ public class Categoria {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }
