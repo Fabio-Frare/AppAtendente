@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">ComandaAppAtendente</string>
+    <string name="pizzaria">PIZZARIA</string>
+    <string name="LaCasa">La Casa</string>
 </resources>

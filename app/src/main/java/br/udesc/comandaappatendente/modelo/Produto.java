@@ -16,6 +16,9 @@ public class Produto {
     private Categoria categoria;
     private List<ConfigProduto> configProduto;
 
+    public Produto() {
+
+    }
 
     public String getIdProduto() {
         return idProduto;
