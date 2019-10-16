@@ -1,15 +1,13 @@
 package br.udesc.comandaappatendente.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
-
 import br.udesc.comandaappatendente.R;
 import br.udesc.comandaappatendente.modelo.Produto;
 import br.udesc.comandaappatendente.util.PedidoAdapter;
@@ -28,6 +26,7 @@ public class PedidoEntrada extends AppCompatActivity implements AdapterView.OnIt
         testeProdutos();
         findComponentes();
         iniAdapter();
+
     }
 
     private void testeProdutos() {
@@ -35,6 +34,9 @@ public class PedidoEntrada extends AppCompatActivity implements AdapterView.OnIt
         p.setNome("Pizza de Mussarela");
         produtos.add(p);
 
+        Produto p2 = new Produto();
+        p2.setNome("Pizza de Calabresa");
+        produtos.add(p2);
 
     }
 

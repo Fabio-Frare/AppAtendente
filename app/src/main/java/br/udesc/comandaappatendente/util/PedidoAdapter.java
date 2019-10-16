@@ -47,10 +47,10 @@ public class PedidoAdapter extends BaseAdapter {
         View view = inflater.inflate(R.layout.listview_pedido, parent, false);
         Produto produto = produtos.get(position);
 
-        ImageView imgProduto = view.findViewById(R.id.imgProduto);
-        TextView txtNomeCliente = view.findViewById(R.id.txtNomeCliente);
-        TextView txtMesa = view.findViewById(R.id.txtMesa);
-        TextView txtNomeProduto = view.findViewById(R.id.txtProduto);
+        ImageView imgProduto      = view.findViewById(R.id.imgProduto);
+        TextView txtNomeCliente   = view.findViewById(R.id.txtNomeCliente);
+        TextView txtMesa          = view.findViewById(R.id.txtMesa);
+        TextView txtNomeProduto   = view.findViewById(R.id.txtProduto);
         LinearLayout layoutPedido = view.findViewById(R.id.layout_pedido);
 
         txtNomeCliente.setText("Fabio Frare");
