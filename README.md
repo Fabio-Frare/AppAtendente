@@ -1,3 +1,3 @@
-Projeto de Dispositivos Móveis
+Projeto de Dispositivos Móveis (incompleto)
 
 Android Studio - Java
